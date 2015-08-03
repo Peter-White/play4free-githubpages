@@ -16,7 +16,7 @@ $(function (){
 
 $.ajax({
   type: 'GET',
-  url: 'http://localhost:3000/api/games',
+  url: 'play4free.herokuapp.com/api/games',
   success: function(games) {
     $.each(games, function(i, game) {
 
@@ -46,7 +46,7 @@ $('#submit').on('click', function() {
 
   $.ajax({
     type: 'POST',
-    url: 'http://localhost:3000/api/games',
+    url: 'play4free.herokuapp.com/api/games',
     data: game,
     success: function(newGame) {
     },

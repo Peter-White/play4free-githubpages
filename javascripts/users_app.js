@@ -15,7 +15,7 @@ $('#submit').on('click', function(e) {
 
   $.ajax({
     type: 'POST',
-    url: 'http://localhost:3000/register',
+    url: 'play4free.herokuapp.com/register',
     data: user,
     success: function(newGame) {
       alert('Success');

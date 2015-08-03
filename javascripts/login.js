@@ -22,7 +22,7 @@ $('#submit').on('click', function(e) {
 
   $.ajax({
     type: 'POST',
-    url: 'http://localhost:3000/login',
+    url: 'play4free.herokuapp.com/login',
     data: user,
     success: function(response) {
       localStorage.setItem('token', response.token);
@@ -30,7 +30,7 @@ $('#submit').on('click', function(e) {
         options.headers = {};
         options.headers['AUTHORIZATION'] = "Token token=" + response.token;
       })
-      window.location.replace('http://localhost:5000/pages/games.html');
+      window.location.replace('http://peter-white.github.io/play4free-githubpages/pages/games.html');
     },
     error: function() {
       alert('Invalid');

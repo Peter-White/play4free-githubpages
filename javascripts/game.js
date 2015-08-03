@@ -43,7 +43,7 @@ $(function(){
 
     $.ajax({
       type: 'GET',
-      url: 'http://localhost:3000/api/games/' + params.id,
+      url: 'play4free.herokuapp.com/api/games/' + params.id,
       success: function(game) {
 
           var date = (function(){
